@@ -11,8 +11,4 @@ jobs:
         steps:
             - uses: actions/checkout@v4.1.5
             - uses: devops-actions/actionlint@v0.1.2
-
-            - run: echo "Workflow triggered in branch '${{ github.ref }}'."
-            - run: echo "Workflow triggered by event '${{ github.event_name }}'."
-            - run: echo "Workflow triggered by actor '${{ github.actor }}'."
-            
+            - run: echo "Hello ${{secrets.WHO_TO_GREET }} 👋 from ${{ github.actor }}"
