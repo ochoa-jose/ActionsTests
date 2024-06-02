@@ -10,5 +10,5 @@ jobs:
             pull-requests: write
         steps:
             - uses: actions/checkout@v4.1.0
-            - uses: devops-actions/actionlint@v0.1.2
+            - uses: devops-actions/actionlint@v0.1.1
             - run: echo "Hello ${{secrets.WHO_TO_GREET }} 👋 from ${{ github.actor }}"
