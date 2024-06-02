@@ -15,4 +15,4 @@ jobs:
                 echo "Workflow triggered by actor '${{ github.actor }}'."
 
             - uses: actions/checkout@v4.1.5
-            - uses: devops-actions/actionlint@v1.0.0
+            - uses: devops-actions/actionlint@v0.1.2
